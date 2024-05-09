@@ -6,8 +6,6 @@
     <title>Mood Tracker</title>
     <link rel="stylesheet" href="./CSS/tracker.css">
     
-    
-
 </head>
 <body>
     
@@ -19,13 +17,14 @@
       <form action="#">
         <fieldset>
           <legend>May 8th 2024</legend>
-          <input type="text" name="text" id="textComment" placeholder="Enter Here" required />
+          <input type="text" name="text"  id="textComment" placeholder="Enter Here" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter alphabet only.')" required />
+         
           <button id="buttonAdd">ADD</button>
     </fieldset>
 
     <fieldset>
       <legend>May 9th 2024 </legend>
-      <input type="text" name="text2" id="text2" placeholder="Enter Here" required />
+      <input type="text" name="text2" id="textComment2" placeholder="Enter Here" required />
       <button id="buttonAdd2">ADD</button>
     </fieldset>
 
@@ -37,13 +36,14 @@
 
     <fieldset>
       <legend>May 11th 2024</legend>
-      <input type="text" name="text4" id="text4" placeholder="Enter Here" required />
+      <input type="text" name="text4" id="text4" placeholder="Enter Here" disabled />
       <button id="buttonAdd4">ADD</button>
     </fieldset>
 
     <fieldset>
       <legend> May 12th 2024</legend>
-      <input type="text" name="text5" id="text5" placeholder="Enter Here" required />
+      <!-- added HTML input attribute -->
+      <input type="text" name="text5" id="text5" placeholder="Enter Here" disabled />
       <button id="buttonAdd5">ADD</button>
     </fieldset>
 
