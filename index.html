@@ -6,6 +6,7 @@
     <title>Mood Tracker</title>
     <link rel="stylesheet" href="./CSS/tracker.css">
     
+    <script src="./JS/tracker.js"></script>
 
 </head>
 <body>
@@ -13,7 +14,7 @@
 
 
 <div class="main-container">
-    <h1>Weekday Mood Tracker </h1>
+    <h1 style="text-align: center;">Weekday Mood Tracker </h1>
     <div class="quiz-container">
       <form action="#">
         <fieldset>
@@ -25,21 +26,25 @@
     <fieldset>
       <legend>May 9th 2024 </legend>
       <input type="text" name="text2" id="text2" placeholder="Enter Here" required />
+      <button id="buttonAdd2">ADD</button>
     </fieldset>
 
     <fieldset>
       <legend>May 10th 2024</legend>
       <input type="text" name="text3" id="text3" placeholder="Enter Here" required />
+      <button id="buttonAdd3">ADD</button>
     </fieldset>
 
     <fieldset>
       <legend>May 11th 2024</legend>
       <input type="text" name="text4" id="text4" placeholder="Enter Here" required />
+      <button id="buttonAdd4">ADD</button>
     </fieldset>
 
     <fieldset>
       <legend> May 12th 2024</legend>
       <input type="text" name="text5" id="text5" placeholder="Enter Here" required />
+      <button id="buttonAdd5">ADD</button>
     </fieldset>
 
     <button type="button" class="btn btn-warning" style="width: 20%;">Submit</button>
@@ -49,8 +54,7 @@
 
 
  <div style="font-size: 40px;">Tally Up!</div>
- <ul id="commentList">list</ul>
+ <li id="commentList">list</li>
  
-  <script src="./JS/tracker.js"></script>
 </body>
 </html>
