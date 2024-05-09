@@ -1,0 +1,13 @@
+.main-container {
+    display: flex;
+    background-color: #606C38;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    flex-direction: column;
+    border: 3px solid black;
+    width: 50%;
+   margin-left: 25%;
+}
+.main-container:hover {
+    background-color: yellowgreen;
+}
