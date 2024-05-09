@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood Tracker</title>
     <link rel="stylesheet" href="./CSS/tracker.css">
+    
 
 </head>
 <body>
@@ -17,7 +18,8 @@
       <form action="#">
         <fieldset>
           <legend>May 8th 2024</legend>
-          <input type="text" name="text" id="text" placeholder="Enter Here" required />
+          <input type="text" name="text" id="textComment" placeholder="Enter Here" required />
+          <button id="buttonAdd">ADD</button>
     </fieldset>
 
     <fieldset>
@@ -45,5 +47,10 @@
   </div>
   </div>
 
+
+ <div style="font-size: 40px;">Tally Up!</div>
+ <ul id="commentList">list</ul>
+ 
+  <script src="./JS/tracker.js"></script>
 </body>
 </html>
