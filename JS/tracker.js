@@ -10,16 +10,28 @@ document.body.appendChild(newDiv);
 
 
 
-//const liList = doument.getElementById("commentList")
-//const textInput = documnet.getElementById("textComment")
-////const textButton = document.getElementById("buttonAdd")
+const liList = document.querySelectorAll("li")
+const textInput = document.getElementById("textComment")
+const textButton = document.getElementById("buttonAdd")
 
-//function addComment (){
-   // const newComment = liListList.value;
-   // if (newComment === "") return;
-   // liListList.appendChild(document.createElement("li")).textcontent = newComment;
-   // textInput.value ="";
-   // textInput.focus();
-//}
+function addComment (){
+   const newComment = textInput.value;
+   if (newComment === "") return;
 
-//textButton.addEventListener("click", addComment);
+   //I created new li element
+const listItem = document.createElement("li");
+
+//I set the text content of the li to the new comment
+listItem.textContent = newComment;
+
+// I appended the new li element to the existing list
+document.body.appendChild(listItem);
+
+   //liList.appendChild(newComment);
+  // document.body.appendChild(liList);
+
+   textInput.value ="";
+   textInput.focus();
+}
+
+textButton.addEventListener("click", addComment);
