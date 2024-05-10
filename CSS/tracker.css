@@ -1,6 +1,6 @@
 .main-container {
     display: flex;
-    background-color: #606C38;
+    background-color: purple;
     transition-property: background-color;
     transition-duration: 0.5s;
     flex-direction: column;
@@ -9,5 +9,9 @@
    margin-left: 25%;
 }
 .main-container:hover {
-    background-color: yellowgreen;
+    background-color: pink;
+}
+
+body {
+    background-color: grey;
 }

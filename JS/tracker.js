@@ -1,14 +1,16 @@
 
 const newDiv = document.createElement("div");
 const textNode = document.createTextNode("Tally Up!");
-const newListItem = document.createElement("li")
+//const newListItem = document.createElement("li")
 newDiv.appendChild(textNode);
-newDiv.appendChild(newListItem);
+//newDiv.appendChild(newListItem);
 document.body.appendChild(newDiv);
 
 // applied styling
 newDiv.style.color = "purple";
-newDiv.style.fontSize = "40px"
+newDiv.style.fontSize = "40px";
+newDiv.style.textAlign = "center";
+newDiv.style.textDecoration = "underline";
 
 
 
@@ -55,6 +57,7 @@ listItem.textContent = newComment;
 //styled color of text
 listItem.style.color = "purple";
 listItem.style.fontSize = "40px";
+listItem.style.textAlign = "center";
 
 // I appended the new li element to the existing list
  document.body.appendChild(listItem);
@@ -70,3 +73,9 @@ listItem.style.fontSize = "40px";
 textButton.addEventListener("click", addComment);
 textButtonTwo.addEventListener("click", addComment);
 textButtonThree.addEventListener("click", addComment);
+
+
+// clone
+
+const cloneNode = newDiv.cloneNode(true)
+document.body.appendChild(cloneNode)

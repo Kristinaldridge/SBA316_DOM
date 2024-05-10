@@ -24,13 +24,13 @@
 
     <fieldset>
       <legend>May 9th 2024 </legend>
-      <input type="text" name="text2" id="textComment2" placeholder="Enter Here" required />
+      <input type="text" name="text2" id="textComment2" placeholder="Enter Here"pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter alphabet only.')" required />
       <button id="buttonAdd2">ADD</button>
     </fieldset>
 
     <fieldset>
       <legend>May 10th 2024</legend>
-      <input type="text" name="text3" id="text3" placeholder="Enter Here" required />
+      <input type="text" name="text3" id="text3" placeholder="Enter Here" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter alphabet only.')" required />
       <button id="buttonAdd3">ADD</button>
     </fieldset>
 
@@ -47,7 +47,7 @@
       <button id="buttonAdd5">ADD</button>
     </fieldset>
 
-    <button type="button" class="btn btn-warning" style="width: 20%;">Submit</button>
+   
     </form>
   </div>
   </div>
