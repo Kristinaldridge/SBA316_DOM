@@ -77,5 +77,5 @@ textButtonThree.addEventListener("click", addComment);
 
 // clone
 
-const cloneNode = newDiv.cloneNode(true)
+const cloneNode = newDiv.cloneNode(true);
 document.body.appendChild(cloneNode)
