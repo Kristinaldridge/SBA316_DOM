@@ -39,4 +39,4 @@ Kristin Aldridge
 
 
 ## Project Status
-  - The status is ongoing. Time expired for adding enhanced styling features, debugging parameters, and functionality. In the future, the functionality of the text comments needs further revision to include iterating through each input field and updating according to new inputs. 
+  - The status is ongoing. Time expired for adding enhanced styling features, debugging parameters, and functionality. In the future, I would add functionality to the clone to make it more user friendly and useabiity. Also, I would add more CSS styling for a more attracive web layout. 
