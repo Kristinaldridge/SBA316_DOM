@@ -1,9 +1,9 @@
 
 const newDiv = document.createElement("div");
 const textNode = document.createTextNode("Tally Up!");
-//const newListItem = document.createElement("li")
+
 newDiv.appendChild(textNode);
-//newDiv.appendChild(newListItem);
+
 document.body.appendChild(newDiv);
 
 // applied styling
