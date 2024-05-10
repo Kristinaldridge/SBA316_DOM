@@ -16,12 +16,9 @@ newDiv.style.textDecoration = "underline";
 
 
 const liList = document.querySelectorAll("li")
-//const textInput = document.getElementById("textComment")
-const textInput = document.querySelector("input[type='text']")
 
-const textButton = document.getElementById("buttonAdd")
-const textButtonTwo = document.getElementById ("buttonAdd2")
-const textButtonThree = document.getElementById ("buttonAdd3")
+const textInputs = document.querySelectorAll("input[type='text']");
+const textButtons = document.querySelectorAll("button");
 
 
 
@@ -37,10 +34,13 @@ function containsOnlyLetters(input) {
 
 
 
-
-function addComment (){
+function addComment (event){
   
-   const newComment = textInput.value;
+   const buttonClicked = event.target;
+   const inputField = buttonClicked.previousElementSibling;
+   const newComment = inputField.value;
+
+   //const newComment = textInput.value;
 
 
    if (newComment === "" || !containsOnlyLetters(newComment)){
@@ -63,17 +63,33 @@ listItem.style.textAlign = "center";
  document.body.appendChild(listItem);
  
  // #2 BOM Property
- textInput.focus();
+
+ inputField.focus();
+ inputField.value = "";
+
 }
 
 }
  
 
-//Registered at least two different event listeners
-textButton.addEventListener("click", addComment);
-textButtonTwo.addEventListener("click", addComment);
-textButtonThree.addEventListener("click", addComment);
 
+//textButton.addEventListener("click", addComment);
+//textButtonTwo.addEventListener("click", addComment);
+//textButtonThree.addEventListener("click", addComment);
+
+
+//Registered event listeners
+
+textButtons.forEach((button, index) => {
+   button.addEventListener("click", addComment);
+   textInputs[index].addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+         event.preventDefault();
+         button.click();
+
+      }
+   });
+});
 
 // clone
 
